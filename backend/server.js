@@ -15,11 +15,13 @@ app.use(helmet());
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
-    methods: ["GET", "POST"],
+    origin: process.env.FRONTEND_URL || "*",
+    methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
+
+app.options("*", cors());
 
 /* Body parser */
 
