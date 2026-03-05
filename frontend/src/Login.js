@@ -116,13 +116,6 @@ export default function Login() {
         <p className="text-center mt-2">
           {error && <span className="text-red-500">* {error}</span>}
         </p>
-
-        <p className="text-center py-8">
-          Don't have an account?{" "}
-          <a href="/" className="text-indigo-600 hover:underline">
-            Sign up
-          </a>
-        </p>
       </form>
     </section>
   );
