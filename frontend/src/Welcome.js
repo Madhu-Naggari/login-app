@@ -11,7 +11,7 @@ const Welcome = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold mb-4">
-        Welcome, {localStorage.getItem("username")}!
+        Welcome, {localStorage.getItem("username") || "Guest"}!
       </h1>
       <p className="text-lg text-gray-600">You have successfully logged in.</p>
       <button

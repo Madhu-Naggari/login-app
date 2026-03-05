@@ -71,7 +71,11 @@ function PrivateRoute({ children }) {
   }, [token]);
 
   if (isAuth === null) {
-    return <p>Checking authentication...</p>;
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="w-10 h-10 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
   }
 
   return isAuth ? children : <Navigate to="/" replace />;
