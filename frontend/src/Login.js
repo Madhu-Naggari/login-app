@@ -63,7 +63,7 @@ export default function Login() {
         </h2>
 
         <p className="mt-4 text-base text-gray-500/90 text-center">
-          Please enter email and password to access.
+          Please enter username and password to access.
         </p>
 
         {/* Username */}
