@@ -66,11 +66,11 @@ export default function Login() {
           Please enter email and password to access.
         </p>
 
-        {/* Email */}
+        {/* Username */}
         <div className="mt-10">
-          <label className="font-medium">Email</label>
+          <label className="font-medium">Username</label>
           <input
-            placeholder="Please enter your email"
+            placeholder="Please enter username"
             className="mt-2 rounded-md ring ring-gray-200 focus:ring-2 focus:ring-indigo-600 outline-none px-3 py-3 w-full"
             required
             type="text"
